@@ -4,12 +4,62 @@
   box-sizing: border-box;
 }
 
+/* Base Font-Size */
+
 html {
   font-size: 16px;
 }
+
+/* Body section */
 
 body {
   font-family: 'Poppins', sans-serif;
   line-height: 24px;
   color: #333333;
 }
+
+/* Navigation */
+
+.main-nav {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.main-nav ul {
+  display: flex;
+  list-style: none;
+}
+
+.main-nav ul li {
+  margin-left: 1em;
+}
+
+/* Responsive Navigation */
+
+@media (min-width: 768px) {
+  .main-nav {
+    display: flex;
+    justify-content: flex-end;
+    overflow: hidden;
+    margin-right: 1em;
+  }
+
+  .main-nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    gap: 1em;
+  }
+
+  .main-nav ul li {
+    margin-left: 0;
+    margin-bottom: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .main-nav {
+    margin-right: 1em;
+  }
+
+
