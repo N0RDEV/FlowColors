@@ -77,4 +77,134 @@ body {
     margin-right: 1em;
   }
 
+/* Responsive Navigation Menu for smaller devices */
 
+.nav-toggle {
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 20px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  margin: 0;
+}
+
+.nav-toggle span {
+  display: block;
+  width: 25px;
+  height: 3px;
+  background-color: #333333;
+}
+/*
+.main-nav {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: lightblue;
+  padding: 1em;
+  z-index: 1;
+}
+
+.main-nav.show {
+  display: flex;
+  flex-direction: column;
+}
+
+@media (max-width: 768px) {
+  .nav-toggle {
+    display: flex;
+  }
+
+  .main-nav {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: lightblue;
+    padding: 1em;
+    z-index: 1;
+  }
+
+  .main-nav.show {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .main-nav ul {
+    flex-direction: column;
+  }
+
+  .main-nav ul li {
+    margin-bottom: 0.5em;
+  }
+}
+*/
+
+.main-nav {
+  display: none;
+  position: absolute; /* Change the position property to fixed */
+  top: -50%; /* Position the navigation menu at the top of the screen */
+  left: 0; /* Position the navigation menu at the left side of the screen */
+  width: 100%; /* Make the navigation menu take up the full width of the screen */
+  background-color: lightblue; /* Change the background color as needed */
+  padding: 1em; /* Add some padding around the navigation menu */
+  z-index: 1; /* Change the z-index property to control the stacking order */
+}
+
+.main-nav.show {
+  display: flex;
+  flex-direction: column;
+}
+
+@media (max-width: 768px) {
+  .nav-toggle {
+    display: flex;
+  }
+
+  .main-nav {
+    display: none;
+    position: absolute; /* Keep the position property as fixed */
+    top: 6%; /* Position the navigation menu at the top of the screen */
+    left: 0; /* Position the navigation menu at the left side of the screen */
+    width: 100%; /* Make the navigation menu take up the full width of the screen */
+    background-color: lightblue; /* Change the background color as needed */
+    padding: 1em; /* Add some padding around the navigation menu */
+    z-index: 1; /* Change the z-index property to control the stacking order */
+    align-items: flex-end;
+  }
+
+  .main-nav.show::first-letter {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+
+.container {
+  display: flex;
+  flex-direction: column !important;
+  align-items: center;
+  justify-content: center;
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+@media (max-width: 100px) {
+  .container {
+    flex-direction: column !important;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .main-nav {
+    flex-direction: column !important;
+    align-items: center;
+    justify-content: center;
+  }
+}
