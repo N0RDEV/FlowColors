@@ -147,8 +147,8 @@ body {
 
 .main-nav {
   display: none;
-  position: relative; /* Change the position property to fixed */
-  top: 0; /* Position the navigation menu at the top of the screen */
+  position: absolute; /* Change the position property to fixed */
+  top: -50%; /* Position the navigation menu at the top of the screen */
   left: 0; /* Position the navigation menu at the left side of the screen */
   width: 100%; /* Make the navigation menu take up the full width of the screen */
   background-color: lightblue; /* Change the background color as needed */
@@ -168,19 +168,43 @@ body {
 
   .main-nav {
     display: none;
-    position: relative; /* Keep the position property as fixed */
-    top: 0; /* Position the navigation menu at the top of the screen */
+    position: absolute; /* Keep the position property as fixed */
+    top: 6%; /* Position the navigation menu at the top of the screen */
     left: 0; /* Position the navigation menu at the left side of the screen */
     width: 100%; /* Make the navigation menu take up the full width of the screen */
     background-color: lightblue; /* Change the background color as needed */
     padding: 1em; /* Add some padding around the navigation menu */
     z-index: 1; /* Change the z-index property to control the stacking order */
+    align-items: flex-end;
   }
 
-  .main-nav.show {
+  .main-nav.show::first-letter {
     display: flex;
     flex-direction: column;
   }
 }
 
 
+.container {
+  display: flex;
+  flex-direction: column !important;
+  align-items: center;
+  justify-content: center;
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+@media (max-width: 100px) {
+  .container {
+    flex-direction: column !important;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .main-nav {
+    flex-direction: column !important;
+    align-items: center;
+    justify-content: center;
+  }
+}
