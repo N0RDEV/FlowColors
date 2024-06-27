@@ -10,6 +10,21 @@ html {
   font-size: 16px;
 }
 
+/* Main Header */
+
+.main-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1em 0;
+  background-color: lightblue;
+}
+
+.main-header h1 {
+  display: flex;
+  margin-left: 0.5em;
+}
+
 /* Body section */
 
 body {
