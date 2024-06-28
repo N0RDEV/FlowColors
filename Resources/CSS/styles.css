@@ -18,6 +18,7 @@ html {
   align-items: center;
   padding: 1em 0;
   background-color: lightblue;
+  min-width: 217px;
 }
 
 .main-header h1 {
@@ -43,6 +44,11 @@ body {
 .main-nav ul {
   display: flex;
   list-style: none;
+  font-size: 1em;
+  /* To change nav row into column 
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: space-between; */
 }
 
 .main-nav ul li {
@@ -72,12 +78,21 @@ body {
   }
 }
 
-@media (max-width: 768px) {
-  .main-nav {
-    margin-right: 1em;
+
+
+
+  .main-nav ul li a {
+    font-size: 1.5vw;
+    /* underlined
+    text-decoration: none; */
+    /* Color 
+    color:#333333; */
+    text-align: center;
   }
 
 /* Responsive Navigation Menu for smaller devices */
+
+
 
 .nav-toggle {
   display: none;
@@ -89,6 +104,7 @@ body {
   cursor: pointer;
   padding: 0;
   margin: 0;
+  margin-right: 1em;
 }
 
 .nav-toggle span {
@@ -97,6 +113,8 @@ body {
   height: 3px;
   background-color: #333333;
 }
+
+
 /*
 .main-nav {
   display: none;
@@ -145,16 +163,7 @@ body {
 }
 */
 
-.main-nav {
-  display: none;
-  position: absolute; /* Change the position property to fixed */
-  top: -50%; /* Position the navigation menu at the top of the screen */
-  left: 0; /* Position the navigation menu at the left side of the screen */
-  width: 100%; /* Make the navigation menu take up the full width of the screen */
-  background-color: lightblue; /* Change the background color as needed */
-  padding: 1em; /* Add some padding around the navigation menu */
-  z-index: 1; /* Change the z-index property to control the stacking order */
-}
+
 
 .main-nav.show {
   display: flex;
@@ -169,7 +178,7 @@ body {
   .main-nav {
     display: none;
     position: absolute; /* Keep the position property as fixed */
-    top: 6%; /* Position the navigation menu at the top of the screen */
+    top: 5%; /* Position the navigation menu at the top of the screen */
     left: 0; /* Position the navigation menu at the left side of the screen */
     width: 100%; /* Make the navigation menu take up the full width of the screen */
     background-color: lightblue; /* Change the background color as needed */
@@ -178,33 +187,115 @@ body {
     align-items: flex-end;
   }
 
-  .main-nav.show::first-letter {
+  
+}
+
+
+@media (max-width: 540px) {
+  .nav-toggle {
     display: flex;
-    flex-direction: column;
-  }
-}
-
-
-.container {
-  display: flex;
-  flex-direction: column !important;
-  align-items: center;
-  justify-content: center;
-  max-width: 400px;
-  margin: 0 auto;
-  padding: 20px;
-}
-
-@media (max-width: 100px) {
-  .container {
-    flex-direction: column !important;
-    align-items: center;
-    justify-content: center;
   }
 
   .main-nav {
-    flex-direction: column !important;
-    align-items: center;
-    justify-content: center;
+    display: none;
+    position: fixed; /* Keep the position property as fixed */
+    top: 5%; /* Position the navigation menu at the top of the screen */
+    left: 0; /* Position the navigation menu at the left side of the screen */
+    width: 100%; /* Make the navigation menu take up the full width of the screen */
+    background-color: lightblue; /* Change the background color as needed */
+    padding: 1em; /* Add some padding around the navigation menu */
+    z-index: 1; /* Change the z-index property to control the stacking order */
+    align-items: flex-end;
+  }
+
+  
+}
+
+
+@media (max-width: 320px) {
+  .main-nav {
+    display: none;
+    position: fixed;
+    top: 5%;
+    left: 0;
+    width: 100%;
+    background-color: lightblue;
+    padding: 1em;
+    z-index: 1;
+    align-items: flex-end;
+  }
+
+  .main-nav.show {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .nav-toggle {
+    display: flex;
   }
 }
+
+@media (max-width: 375px) {
+  .main-nav {
+    display: none;
+    position: fixed;
+    top: 6%;
+    left: 0;
+    width: 100%;
+    background-color: lightblue;
+    padding: 1em;
+    z-index: 1;
+    align-items: flex-end;
+  }
+}
+
+@media (max-width: 540px) {
+  .main-nav {
+    display: none;
+    position: fixed;
+    top: 6%;
+    left: 0;
+    width: 100%;
+    background-color: lightblue;
+    padding: 1em;
+    z-index: 1;
+    align-items: flex-end;
+  }
+}
+
+@media (max-width: 207px) {
+  .main-nav {
+    display: none;
+    position: fixed;
+    top: 5%;
+    left: 0;
+    width: 100%;
+    background-color: lightblue;
+    padding: 1em;
+    z-index: 1;
+    align-items: flex-end;
+  }
+}
+
+/* Nav Link size adjustments */
+
+
+
+@media (max-width: 768px) {
+  .main-nav ul li a {
+    font-size: 4vw;
+  }
+}
+
+@media (max-width: 540px) {
+  .main-nav ul li a {
+    font-size: 4vw;
+  }
+}
+
+@media (max-width: 320px) {
+  .main-nav ul li a {
+    font-size: 4vw;
+  }
+}
+
