@@ -299,3 +299,36 @@ body {
   }
 }
 
+/* Footer */
+
+.main-footer {
+  display: flex;
+  background-color: lightblue;
+  position: fixed;
+  width: 100%;
+  bottom: 0em;
+}
+
+.contact {
+  display: block;
+  margin-left: 1em;
+  justify-content: center;
+}
+
+.follow {
+  display: block;
+  margin-left: 5em;
+  justify-content: center;
+}
+
+.links {
+  display: flex;
+  margin-left: 5em;
+  justify-content: center;
+}
+
+.nav-links {
+  display: block;
+  margin-left: 2em;
+  justify-content: center;
+}
