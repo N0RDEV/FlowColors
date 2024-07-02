@@ -289,7 +289,7 @@ body {
 .main-footer {
   display: flex;
   background-color: lightblue;
-  position: fixed;
+  position: relative;
   width: 100%;
   bottom: 0em;
 }
@@ -339,6 +339,8 @@ body {
   row-gap: 30px;
   background-color: #fff;
   overflow: hidden;
+  align-items: center;
+  justify-content: center;
 }
 
 .testimonial .image {
@@ -422,4 +424,38 @@ body {
   .nav-btn {
     display: none;
   }
+}
+
+/* Main Container */
+
+.welcome {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 40vh;
+  width: 100%;
+  background-color: #e3f2fd;
+}
+
+.about-us {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 10vh;
+  width: 100%;
+  background-color: #e3f2fd;
+}
+
+.intro {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 10vh;
+  width: 100%;
+  background-color: #e3f2fd;
+  padding: 2em;
+  text-align: center;
 }
