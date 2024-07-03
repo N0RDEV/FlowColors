@@ -479,7 +479,7 @@ body {
 }
 
 /* Email Textbox */
-
+/*
 .input {
   position: relative;
   font-size: 1.5em;
@@ -489,16 +489,20 @@ body {
   display: inline-block;
 }
 
-*:not(span):not(div):not(section):not(h1):not(h2):not(h3):not(footer):not(body):not(html):not(header):not(script):not(main):not(ul):not(li):not(title) {
+*/
+/*
+:not(span):not(div):not(section):not(h1):not(h2):not(h3):not(footer):not(body):not(html):not(header):not(script):not(main):not(ul):not(li):not(title) { 
   /* position: relative; */
-  display: inherit;
+  /* display: inherit; 
   border-radius: inherit;
   margin: 0;
   border: none;
   outline: none;
   padding: 0 .325em;
   z-index: 1;
-}
+} 
+
+
 
   &:focus + span {
     opacity: 1;
@@ -544,3 +548,72 @@ html::after {
 	left:0;
 	top:0;
 }
+*/
+
+/* Styling Button */
+
+.center {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  padding: 1em;
+}
+
+.outer {
+  /* background: linear-gradient(#14ffe9, #ffeb3b, #ff00e0) */
+  position: relative;
+  overflow: visible;
+}
+
+input {
+  height: 70px;
+  width: 220px;
+  border-radius: 50px;
+  border: none;
+  font-size: 1em;
+  color: #333;
+  position: relative;
+  z-index: 1;
+  padding: 1em;
+  margin: 0.3em;
+}
+
+
+
+
+
+.outer span:nth-child(1) {
+  filter: blur(7px);
+}
+
+/* Animation speed */
+.outer {
+  animation: rotate 1.5s linear infinite;
+}
+
+@keyframes rotate {
+  0% {
+    filter: hue-rotate(0deg);
+  }
+  100% {
+    filter: hue-rotate(360deg);
+  }
+}
+
+.outer::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(45deg, #14ffe9, #ffeb3b, #ff00e0);
+  animation: rotate 5s linear infinite;
+  z-index: 0;
+  border-radius: 50px;
+  border: 3px solid transparent;
+  border: hidden;
+}
+
+

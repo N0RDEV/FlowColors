@@ -131,6 +131,7 @@
     </div>
   </section>
 
+  <!-- button 
   <section class="subscribe">
     <h2>Subscribe to Our Newsletter</h2>
     <form action="#">
@@ -143,6 +144,22 @@
       </section>
     </form>
   </section>
+  -->
+
+  <div class="center">
+    <div class="outer button">
+      <input type="email" name="email" placeholder="Enter your email address" required>
+      <span></span>
+      <span></span>
+      
+    </div>
+  </div>
+  <div class="submit">
+    <input class="submit-btn" type="submit" value="Subscribe">
+    <span></span>
+    <span></span>
+  </div>
+</div>
 
   <footer class="main-footer">
     <div class="contact">
@@ -176,6 +193,23 @@
   <!-- Javascript -->
   <script src="Resources/JS/Rnav.js"></script>
   <script src="Resources/JS/script.js"></script>
+
+  <script>
+    const emailInput = document.querySelector('input[type="email"]');
+    const submitBtn = document.querySelector('.submit-btn');
+
+    submitBtn.addEventListener('click', function() {
+      if (emailInput.checkValidity()) {
+        // Email input is valid, perform your submit action here
+        console.log('Email is valid, submit action performed');
+      } else {
+        // Email input is not valid, display an error message or perform your validation action here
+        console.log('Email is not valid, validation action performed');
+      }
+    });
+
+    console.log('JavaScript code is connected');
+  </script>
 
 </body>
 </html>
