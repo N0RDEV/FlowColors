@@ -560,32 +560,28 @@ html::after {
   padding: 1em;
 }
 
-.outer {
-  /* background: linear-gradient(#14ffe9, #ffeb3b, #ff00e0) */
-  position: relative;
-  overflow: visible;
-}
+
 
 input {
   height: 70px;
-  width: 220px;
+  width: 250px;
   border-radius: 50px;
   border: none;
   font-size: 1em;
   color: #333;
   position: relative;
-  z-index: 1;
   padding: 1em;
   margin: 0.3em;
+  text-align: center;
+}
+
+input.submit-btn {
+  height: 50px;
+  width: 180px;
 }
 
 
 
-
-
-.outer span:nth-child(1) {
-  filter: blur(7px);
-}
 
 /* Animation speed */
 .outer {
@@ -612,8 +608,23 @@ input {
   animation: rotate 5s linear infinite;
   z-index: 0;
   border-radius: 50px;
-  border: 3px solid transparent;
-  border: hidden;
+  filter: blur(7px);
 }
 
+.form-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1em; /* Add some gap between inputs */
+}
 
+.two {
+  display: flex;
+  bottom: 6em;
+  background: linear-gradient(45deg, #14ffe9, #ffeb3b, #ff00e0);
+}
+
+.one {
+  background: linear-gradient(45deg, #14ffe9, #ffeb3b, #ff00e0);
+  filter: blur(7px);
+}
