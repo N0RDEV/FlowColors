@@ -329,7 +329,7 @@ body {
   margin-left: 2em;
   justify-content: center;
 }
-
+/*
 .main-footer {
   display: flex;
   flex-direction: column;
@@ -350,7 +350,7 @@ body {
 .nav-links {
   margin: 0.5em;
 }
-
+*/
 
 
 
@@ -362,6 +362,8 @@ footer {
   bottom: 0;
   width: 100%;
   background-color: #ff00e0;
+  min-height: 20vh;
+  padding: 0.5em;
 }
 
 .container-3 {
@@ -441,6 +443,8 @@ footer {
   footer {
     position: relative;
     bottom: 0px;
+    width: 100%;
+    height: auto;
   }
   .left .context {
     padding-right: 0px;
