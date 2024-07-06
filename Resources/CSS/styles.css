@@ -53,7 +53,7 @@ html {
   justify-content: space-between;
   align-items: center;
   padding: 1em 0;
-  background-color: lightblue;
+  background-color: linear-gradient(to right, #14ffe9, #ff00e0);
   min-width: 217px;
 }
 
@@ -361,14 +361,14 @@ body {
 footer {
   bottom: 0;
   width: 100%;
-  background-color: #ff00e0;
+  background-color: #87a6bd;
   min-height: 20vh;
   padding: 0.5em;
 }
 
 .container-3 {
   display: flex;
-  padding: 3rem;
+  padding: 1em;
 }
 
 .container-3 .left-section {
@@ -398,11 +398,29 @@ footer {
 .section .context::after {
   position: absolute;
   content: '';
-  height: 2px;
+  height: 3px;
   top: -10px;
-  width: 15%;
-  background-color: #dd5f24;
+  width: 40%;
+  background: linear-gradient(45deg, #14ffe9, #ffeb3b, #ff00e0);
+  animation: rotate 5s linear infinite;
 }
+
+hr {
+  height: 4px;
+  width: 20%;
+  background: linear-gradient(45deg, #14ffe9, #ffeb3b, #ff00e0);
+  animation: rotate 1s linear infinite;
+  align-items: center;
+  justify-content: center;
+  margin-left: 40%;
+}
+
+.bx {
+  color: #333;
+  animation: rotate 5s linear infinite;
+  font-size: 1.5em;
+}
+
 
 .left .context .socials {
   margin: 20px 0 0 0;
@@ -424,7 +442,17 @@ footer {
   border: 1px solid #14ffe9;
 }
 
+.middle {
+  display: block;
+  align-items: center;
+  justify-content: center;
+  margin-left: 1em;
+}
 
+.right {
+  display: block;
+  margin-left: 5em;
+}
 
 .middle .context .bx bxs-map {
   font-size: 1em;
@@ -475,15 +503,82 @@ footer {
   }
 }
 
+/* Footer blog */
+
+.footer_blog
+{
+	margin-top: 39px;
+}
+.footer_blog_item
+{
+	margin-bottom: 21px;
+}
+.footer_blog_item:last-child
+{
+	margin-bottom: 0px;
+}
+.footer_blog_image
+{
+	width: 60px;
+	height: 60px;
+	float: left;
+}
+.footer_blog_image img
+{
+	width: 100%;
+}
+.footer_blog_content
+{
+	padding-left: 81px;
+}
+.footer_blog_title
+{
+	margin-top: -4px;
+	padding-left: 1px;
+}
+.footer_blog_title a
+{
+	font-size: 14px;
+	font-weight: 400;
+	color: #FFFFFF;
+}
+.footer_blog_title a:hover
+{
+	color: #f8966f;
+}
+.footer_blog_date
+{
+	font-size: 12px;
+	font-weight: 400;
+	color: #c73e14;
+	margin-top: 7px;
+}
+
+.footer_title
+{
+	font-size: 15px;
+	font-weight: 700;
+	color: #333;
+	text-transform: uppercase;
+}
+
+.footer_blog_image {
+  width: 60px;
+  height: 60px;
+  float: left;
+}
+
 /* Testimonials */
 
 .container {
-  height: 70vh;
+  height: auto;
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
   background-color: #e3f2fd;
+  padding-bottom: 5em;
+  padding-top: 5em;
 }
 
 .testimonial {
@@ -501,8 +596,12 @@ footer {
 .testimonial .image {
   height: 270px;
   width: 270px;
-  object-fit: cover;
+  object-fit: contain;
   border-radius: 50%;
+}
+
+.image {
+  display: flex;
 }
 
 .testimonial .slide {
@@ -601,6 +700,7 @@ footer {
   height: 10vh;
   width: 100%;
   background-color: #e3f2fd;
+  padding: 1em;
 }
 
 .intro {
@@ -611,8 +711,14 @@ footer {
   height: 10vh;
   width: 100%;
   background-color: #e3f2fd;
-  padding: 2em;
+  padding: 10em;
   text-align: center;
+}
+
+.container5 {
+  max-width: 1200px; /* Adjust this value to your desired maximum width */
+  margin: 0 auto; /* Center the container horizontally */
+  padding: 20px; /* Add some padding to the container */
 }
 
 /* Subscribe section */
@@ -812,4 +918,37 @@ input.submit-btn {
   z-index: 0;
   flex-basis: 0;
   height: 30px;
+}
+
+
+/* Copyright */
+
+.copyright
+{
+	background: linear-gradient(to right, #14ffe9, #ff00e0);
+}
+.copyright_content
+{
+	height: 52px;
+}
+.copyright_content div
+{
+	font-size: 16px;
+	font-weight: 600;
+	color: #333;
+  margin-left: 1em;
+  padding-top: 1em;
+}
+
+a:hover
+{
+	color: #FFFFFF;
+}
+
+
+.news {
+  font-size: 1.5em;
+  font-weight: 600;
+  text-align: center;
+  padding: 1em;
 }
