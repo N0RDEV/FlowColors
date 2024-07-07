@@ -573,13 +573,14 @@ hr {
 
 .container {
   height: auto;
-  width: 100%;
+  width: 80%;
   display: flex;
   align-items: center;
   justify-content: center;
   background-color: #e3f2fd;
   padding-bottom: 5em;
   padding-top: 5em;
+  margin: 0 auto;
 }
 
 .testimonial {
@@ -690,8 +691,9 @@ hr {
   text-align: center;
   justify-content: center;
   height: 40vh;
-  width: 100%;
+  width: 80%;
   background-color: #e3f2fd;
+  margin: 0 auto;
 }
 
 .about-us {
@@ -700,9 +702,11 @@ hr {
   align-items: center;
   justify-content: center;
   height: 10vh;
-  width: 100%;
+  width: 80%;
   background-color: #e3f2fd;
   padding: 1em;
+  margin: 0 auto;
+  text-align: center;
 }
 
 .intro {
@@ -718,9 +722,11 @@ hr {
 }
 
 .container5 {
-  max-width: 1200px; /* Adjust this value to your desired maximum width */
-  margin: 0 auto; /* Center the container horizontally */
-  padding: 20px; /* Add some padding to the container */
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
+  width: 80%;
+  background-color: #e3f2fd;
 }
 
 /* Subscribe section */
