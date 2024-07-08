@@ -60,6 +60,29 @@ html {
 .main-header h1 {
   display: flex;
   margin-left: 0.5em;
+  font-size: 2.5em;
+  align-items: center;
+  line-height: 1.2;
+}
+
+
+
+.main-header h1::before {
+  content: "Flow";
+  color: #fff;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+}
+
+.main-header h1::after {
+  content: "Colors";
+  color: transparent;
+  background: linear-gradient(45deg, #14ffe9, #ffeb3b, #ff00e0);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: rotate 1s linear infinite;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
 }
 
 /* Body section */
@@ -75,6 +98,7 @@ body {
 .main-nav {
   display: flex;
   justify-content: flex-end;
+  color: #333;
 }
 
 .main-nav ul {
@@ -124,6 +148,11 @@ body {
     /* Color 
     color:#333333; */
     text-align: center;
+    
+  }
+
+  .main-nav a {
+    color: #fff;
   }
 
 /* Responsive Navigation Menu for smaller devices */
@@ -694,6 +723,18 @@ hr {
   width: 80%;
   background-color: #e3f2fd;
   margin: 0 auto;
+  margin-bottom: 5em;
+  min-width: 310px;
+}
+
+.welcome h2 {
+  font-size: 3em;
+  line-height: 1em;
+}
+
+.welcome p {
+  padding: 1em;
+  font-size: 1.5em;
 }
 
 .about-us {
@@ -707,6 +748,16 @@ hr {
   padding: 1em;
   margin: 0 auto;
   text-align: center;
+  padding-top: 5em;
+}
+
+.about-us h2 {
+  font-size: 2em;
+  line-height: 1em;
+}
+
+.about-us p {
+  padding: 1em;
 }
 
 .intro {
@@ -723,10 +774,16 @@ hr {
 
 .container5 {
   margin: 0 auto;
-  padding: 20px;
+  padding: 50px;
   text-align: center;
   width: 80%;
   background-color: #e3f2fd;
+}
+
+.container6 {
+  background: url(https://fvso.org/wp-content/uploads/2018/09/2018-19splash.jpg);
+  padding-top: 2em;
+  padding-bottom: 2em;
 }
 
 /* Subscribe section */
@@ -950,7 +1007,7 @@ input.submit-btn {
 
 a:hover
 {
-	color: #FFFFFF;
+	color: #333;
 }
 
 
